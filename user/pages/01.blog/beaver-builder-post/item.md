@@ -11,7 +11,7 @@ description:
     value: oven, tart form, jar
 date: 17:34 01/01/2015
 taxonomy:
-    category: Cakes
+    category: artigos
     tag: [cakes, food, sugar, milk]
 
 ingredients_title: Ingredients

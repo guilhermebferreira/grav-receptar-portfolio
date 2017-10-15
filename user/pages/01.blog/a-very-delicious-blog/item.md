@@ -2,7 +2,7 @@
 title: A very delicious blog
 date: 14:55 08/31/2014
 taxonomy:
-    category: cakes, cookies
+    category: artigos
     tag: [cakes, cookies]
 ---
 

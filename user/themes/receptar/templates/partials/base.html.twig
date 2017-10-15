@@ -21,6 +21,7 @@
     {% do assets.addCss('theme://css/jetpack.css') %}
     {% do assets.addCss('theme://css/lightbox.css') %}
     {% do assets.addCss('theme://css/custom.css') %}
+    {% do assets.addCss('theme://css/additions.css') %}
     {% if browser.getBrowser == 'msie' and browser.getVersion >= 7 and browser.getVersion <= 8 %}
     {% do assets.addCss('theme://css/ie.css') %}
   {% endif %}
@@ -59,7 +60,7 @@
 
 
         <div id="primary" class="content-area">
-       
+
           
           {% block content %}{% endblock %}
         </div>

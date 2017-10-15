@@ -2,7 +2,7 @@
 title: Duis autem
 date: 14:55 08/27/2014
 taxonomy:
-    category: Cookies, Eating out, Recipes
+    category: artigos
     tag: [cookies, eating out, recipes]
 ---
 

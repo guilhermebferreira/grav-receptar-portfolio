@@ -32,7 +32,7 @@ ingredients:
       - Water 0.5l
       - Milk 1l
 taxonomy:
-    category: Recipes
+    category: artigos
     tag: [recipes, meat]
 vimeo: https://player.vimeo.com/video/63451562?title=0&amp;byline=0&amp;portrait=0
 ---

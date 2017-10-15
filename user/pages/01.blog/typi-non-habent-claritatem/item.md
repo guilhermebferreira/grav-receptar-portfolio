@@ -2,7 +2,7 @@
 title: Typi non habent claritatem
 date: 14:55 08/29/2014
 taxonomy:
-    category: Meat, Poultry, Recipes
+    category: artigos
     tag: [meat, poultry, recipes]
 ---
 

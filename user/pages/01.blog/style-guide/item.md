@@ -2,7 +2,7 @@
 title: Style guide
 date: 14:55 07/11/2014
 taxonomy:
-    category: Eating out
+    category: portfolio
     tag: [style guide, recipes]
 ---
 

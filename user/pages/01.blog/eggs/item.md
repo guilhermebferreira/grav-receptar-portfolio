@@ -2,7 +2,7 @@
 title: Some eggs
 date: 13:34 08/23/2014
 taxonomy:
-    category: Cakes, Recipes
+    category: artigos
     tag: [cakes, recipes]
 ---
 

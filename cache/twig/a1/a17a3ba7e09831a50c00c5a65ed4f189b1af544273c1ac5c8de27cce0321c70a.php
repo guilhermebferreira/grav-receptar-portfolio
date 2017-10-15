@@ -33,52 +33,57 @@ class __TwigTemplate_93f49da436a828970b6da717a34e230ce4b82ebc7869412f5e81f982175
                 echo "      ";
                 $context["active"] = ((($this->getAttribute(($context["uri"] ?? null), "param", array(0 => ($context["taxonomy"] ?? null)), "method") == $context["tax"])) ? ("active") : (""));
                 // line 7
-                echo "\t      \t";
-                if (($context["value"] == 1)) {
+                echo "      \t";
+                if (($context["tax"] != "sidebar")) {
                     // line 8
-                    echo "\t\t\t    <a class=\"";
-                    echo ($context["active"] ?? null);
-                    echo "\" title=\"";
-                    echo $context["value"];
-                    echo " ";
-                    echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate("TOPIC");
-                    echo "\" href=\"";
-                    echo ($context["base_url_absolute"] ?? null);
-                    echo "/";
-                    echo ($context["taxonomy"] ?? null);
-                    echo $this->getAttribute($this->getAttribute(($context["config"] ?? null), "system", array()), "param_sep", array());
-                    echo twig_escape_filter($this->env, $context["tax"], "url");
-                    echo "\">";
-                    echo $context["tax"];
-                    echo "</a>
+                    echo "\t      \t";
+                    if (($context["value"] == 1)) {
+                        // line 9
+                        echo "\t\t\t    <a class=\"";
+                        echo ($context["active"] ?? null);
+                        echo "\" title=\"";
+                        echo $context["value"];
+                        echo " ";
+                        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate("TOPIC");
+                        echo "\" href=\"";
+                        echo ($context["base_url_absolute"] ?? null);
+                        echo "/";
+                        echo ($context["taxonomy"] ?? null);
+                        echo $this->getAttribute($this->getAttribute(($context["config"] ?? null), "system", array()), "param_sep", array());
+                        echo twig_escape_filter($this->env, $context["tax"], "url");
+                        echo "\">";
+                        echo $context["tax"];
+                        echo "</a>
 \t\t\t";
-                } else {
-                    // line 10
-                    echo "\t\t\t    <a class=\"";
-                    echo ($context["active"] ?? null);
-                    echo "\" title=\"";
-                    echo $context["value"];
-                    echo " ";
-                    echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate("TOPICS");
-                    echo "\" href=\"";
-                    echo ($context["base_url_absolute"] ?? null);
-                    echo "/";
-                    echo ($context["taxonomy"] ?? null);
-                    echo $this->getAttribute($this->getAttribute(($context["config"] ?? null), "system", array()), "param_sep", array());
-                    echo twig_escape_filter($this->env, $context["tax"], "url");
-                    echo "\">";
-                    echo $context["tax"];
-                    echo "</a>
+                    } else {
+                        // line 11
+                        echo "\t\t\t    <a class=\"";
+                        echo ($context["active"] ?? null);
+                        echo "\" title=\"";
+                        echo $context["value"];
+                        echo " ";
+                        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate("TOPICS");
+                        echo "\" href=\"";
+                        echo ($context["base_url_absolute"] ?? null);
+                        echo "/";
+                        echo ($context["taxonomy"] ?? null);
+                        echo $this->getAttribute($this->getAttribute(($context["config"] ?? null), "system", array()), "param_sep", array());
+                        echo twig_escape_filter($this->env, $context["tax"], "url");
+                        echo "\">";
+                        echo $context["tax"];
+                        echo "</a>
 \t\t\t";
+                    }
+                    // line 13
+                    echo "      \t";
                 }
-                // line 12
-                echo "      
-    ";
+                // line 14
+                echo "    ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['tax'], $context['value'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 14
+            // line 15
             echo "</div>
 ";
         }
@@ -96,7 +101,7 @@ class __TwigTemplate_93f49da436a828970b6da717a34e230ce4b82ebc7869412f5e81f982175
 
     public function getDebugInfo()
     {
-        return array (  82 => 14,  75 => 12,  57 => 10,  39 => 8,  36 => 7,  33 => 6,  29 => 5,  26 => 4,  24 => 3,  21 => 2,  19 => 1,);
+        return array (  87 => 15,  81 => 14,  78 => 13,  60 => 11,  42 => 9,  39 => 8,  36 => 7,  33 => 6,  29 => 5,  26 => 4,  24 => 3,  21 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -115,12 +120,13 @@ class __TwigTemplate_93f49da436a828970b6da717a34e230ce4b82ebc7869412f5e81f982175
 <div class=\"tagcloud\">
     {% for tax,value in taxlist[taxonomy] %}
       {% set active = uri.param(taxonomy) == tax ? 'active' : '' %}
+      \t{% if tax != 'sidebar' %}
 \t      \t{% if value == 1 %}
 \t\t\t    <a class=\"{{ active }}\" title=\"{{ value }} {{ 'TOPIC'|t }}\" href=\"{{ base_url_absolute }}/{{ taxonomy }}{{ config.system.param_sep }}{{ tax|e('url') }}\">{{ tax }}</a>
 \t\t\t{% else %}
 \t\t\t    <a class=\"{{ active }}\" title=\"{{ value }} {{ 'TOPICS'|t }}\" href=\"{{ base_url_absolute }}/{{ taxonomy }}{{ config.system.param_sep }}{{ tax|e('url') }}\">{{ tax }}</a>
 \t\t\t{% endif %}
-      
+      \t{% endif %}
     {% endfor %}
 </div>
 {% endif %}

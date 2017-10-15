@@ -1,0 +1,18 @@
+#navbar{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#navbar a {
+
+    color: white;
+	border-top-right-radius: 1em; 
+	border-top-left-radius: 1em; 
+}
+
+#navbar a:hover {
+	border-top-right-radius: 0; 
+}
+#navbar a::before {
+	border-top-right-radius: 1em; 
+}
+

@@ -4,12 +4,13 @@
 <div class="tagcloud">
     {% for tax,value in taxlist[taxonomy] %}
       {% set active = uri.param(taxonomy) == tax ? 'active' : '' %}
+      	{% if tax != 'sidebar' %}
 	      	{% if value == 1 %}
 			    <a class="{{ active }}" title="{{ value }} {{ 'TOPIC'|t }}" href="{{ base_url_absolute }}/{{ taxonomy }}{{ config.system.param_sep }}{{ tax|e('url') }}">{{ tax }}</a>
 			{% else %}
 			    <a class="{{ active }}" title="{{ value }} {{ 'TOPICS'|t }}" href="{{ base_url_absolute }}/{{ taxonomy }}{{ config.system.param_sep }}{{ tax|e('url') }}">{{ tax }}</a>
 			{% endif %}
-      
+      	{% endif %}
     {% endfor %}
 </div>
 {% endif %}
