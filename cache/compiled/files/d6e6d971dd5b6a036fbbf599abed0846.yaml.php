@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/guilherme/Documentos/grav-receptar/user/themes/receptar/languages.yaml',
-    'modified' => 1508086896,
+    'modified' => 1508086963,
     'data' => [
         'en' => [
             'SITE' => [
@@ -444,7 +444,8 @@ return [
             'SEARCH_FIELD' => 'Digite e pressione enter...',
             'NEXT' => 'Proximo',
             'PREVIOUS' => 'Anterior',
-            'TOPICS' => 'tópicos'
+            'TOPICS' => 'tópicos',
+            'TOPIC' => 'tópico'
         ],
         'ro' => [
             'SITE' => [
