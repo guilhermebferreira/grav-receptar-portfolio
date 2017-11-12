@@ -1,147 +1,110 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1508082189,
-    'checksum' => '9e63fa9370cb78b49c7cd53eeb8cecd8',
+    'timestamp' => 1510498218,
+    'checksum' => '7c061cc5d80f89e1ee42f638d86d3287',
     'files' => [
         'user/config' => [
             'plugins/archives' => [
                 'file' => 'user/config/plugins/archives.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ],
             'plugins/jscomments' => [
                 'file' => 'user/config/plugins/jscomments.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ],
             'plugins/relatedpages' => [
                 'file' => 'user/config/plugins/relatedpages.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/config/plugins/simplesearch.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1507833054
+                'modified' => 1510448321
             ]
         ],
         'user/plugins' => [
-            'plugins/error' => [
-                'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1507833056
-            ],
-            'plugins/simplesearch' => [
-                'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1507833065
-            ],
-            'plugins/form' => [
-                'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1507833057
-            ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/feed.yaml',
-                'modified' => 1507833056
-            ],
-            'plugins/taxonomylist' => [
-                'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
-                'modified' => 1507833065
-            ],
-            'plugins/relatedpages' => [
-                'file' => 'user/plugins/relatedpages/relatedpages.yaml',
-                'modified' => 1507833064
+                'modified' => 1510448321
             ],
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/archives.yaml',
-                'modified' => 1507833055
-            ],
-            'plugins/problems' => [
-                'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1507833064
+                'modified' => 1510448321
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1507833056
-            ],
-            'plugins/comments' => [
-                'file' => 'user/plugins/comments/comments.yaml',
-                'modified' => 1507833055
+                'modified' => 1510448321
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
-                'modified' => 1507833063
+                'modified' => 1510448321
+            ],
+            'plugins/relatedpages' => [
+                'file' => 'user/plugins/relatedpages/relatedpages.yaml',
+                'modified' => 1510448321
+            ],
+            'plugins/problems' => [
+                'file' => 'user/plugins/problems/problems.yaml',
+                'modified' => 1510448321
+            ],
+            'plugins/form' => [
+                'file' => 'user/plugins/form/form.yaml',
+                'modified' => 1510448321
+            ],
+            'plugins/simplesearch' => [
+                'file' => 'user/plugins/simplesearch/simplesearch.yaml',
+                'modified' => 1510448321
+            ],
+            'plugins/error' => [
+                'file' => 'user/plugins/error/error.yaml',
+                'modified' => 1510448321
+            ],
+            'plugins/comments' => [
+                'file' => 'user/plugins/comments/comments.yaml',
+                'modified' => 1510448321
+            ],
+            'plugins/taxonomylist' => [
+                'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
+                'modified' => 1510448321
             ]
         ]
     ],
     'data' => [
         'plugins' => [
-            'error' => [
-                'enabled' => true,
-                'routes' => [
-                    404 => '/error'
-                ]
-            ],
-            'simplesearch' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'display_button' => false,
-                'min_query_length' => 3,
-                'route' => '/search',
-                'search_content' => 'rendered',
-                'template' => 'simplesearch_results',
-                'filters' => NULL,
-                'filter_combinator' => 'and',
-                'ignore_accented_characters' => false,
-                'order' => [
-                    'by' => 'date',
-                    'dir' => 'desc'
-                ]
-            ],
-            'form' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'refresh_prevention' => false,
-                'files' => [
-                    'multiple' => false,
-                    'limit' => 10,
-                    'destination' => 'self@',
-                    'avoid_overwriting' => false,
-                    'random_name' => false,
-                    'accept' => [
-                        0 => 'image/*'
-                    ]
-                ]
-            ],
             'feed' => [
                 'enabled' => true,
                 'limit' => 10,
@@ -150,9 +113,51 @@ return [
                 'length' => 500,
                 'enable_json_feed' => false
             ],
-            'taxonomylist' => [
+            'archives' => [
                 'enabled' => true,
-                'route' => '/blog'
+                'built_in_css' => true,
+                'date_display_format' => 'F Y',
+                'show_count' => true,
+                'limit' => 12,
+                'order' => [
+                    'by' => 'date',
+                    'dir' => 'desc'
+                ],
+                'filter_combinator' => 'and',
+                'filters' => [
+                    'category' => 'Recipes'
+                ],
+                'taxonomy_names' => [
+                    'month' => 'archives_month',
+                    'year' => 'archives_year'
+                ]
+            ],
+            'email' => [
+                'enabled' => true,
+                'from' => 'your@email.here',
+                'from_name' => NULL,
+                'to' => 'your@email.here',
+                'to_name' => NULL,
+                'mailer' => [
+                    'engine' => 'mail',
+                    'smtp' => [
+                        'server' => 'localhost',
+                        'port' => 25,
+                        'encryption' => 'none',
+                        'user' => '',
+                        'password' => ''
+                    ],
+                    'sendmail' => [
+                        'bin' => '/usr/sbin/sendmail'
+                    ]
+                ],
+                'content_type' => 'text/html',
+                'debug' => false
+            ],
+            'pagination' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'delta' => 0
             ],
             'relatedpages' => [
                 'enabled' => true,
@@ -201,50 +206,46 @@ return [
                     'process' => false
                 ]
             ],
-            'archives' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'date_display_format' => 'F Y',
-                'show_count' => true,
-                'limit' => 12,
-                'order' => [
-                    'by' => 'date',
-                    'dir' => 'desc'
-                ],
-                'filter_combinator' => 'and',
-                'filters' => [
-                    'category' => 'Recipes'
-                ],
-                'taxonomy_names' => [
-                    'month' => 'archives_month',
-                    'year' => 'archives_year'
-                ]
-            ],
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
             ],
-            'email' => [
+            'form' => [
                 'enabled' => true,
-                'from' => 'your@email.here',
-                'from_name' => NULL,
-                'to' => 'your@email.here',
-                'to_name' => NULL,
-                'mailer' => [
-                    'engine' => 'mail',
-                    'smtp' => [
-                        'server' => 'localhost',
-                        'port' => 25,
-                        'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
-                    ],
-                    'sendmail' => [
-                        'bin' => '/usr/sbin/sendmail'
+                'built_in_css' => true,
+                'refresh_prevention' => false,
+                'files' => [
+                    'multiple' => false,
+                    'limit' => 10,
+                    'destination' => 'self@',
+                    'avoid_overwriting' => false,
+                    'random_name' => false,
+                    'accept' => [
+                        0 => 'image/*'
                     ]
-                ],
-                'content_type' => 'text/html',
-                'debug' => false
+                ]
+            ],
+            'simplesearch' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'display_button' => false,
+                'min_query_length' => 3,
+                'route' => '/search',
+                'search_content' => 'rendered',
+                'template' => 'simplesearch_results',
+                'filters' => NULL,
+                'filter_combinator' => 'and',
+                'ignore_accented_characters' => false,
+                'order' => [
+                    'by' => 'date',
+                    'dir' => 'desc'
+                ]
+            ],
+            'error' => [
+                'enabled' => true,
+                'routes' => [
+                    404 => '/error'
+                ]
             ],
             'comments' => [
                 'enabled' => true,
@@ -334,10 +335,9 @@ return [
                     ]
                 ]
             ],
-            'pagination' => [
+            'taxonomylist' => [
                 'enabled' => true,
-                'built_in_css' => true,
-                'delta' => 0
+                'route' => '/blog'
             ],
             'jscomments' => [
                 'provider' => '',

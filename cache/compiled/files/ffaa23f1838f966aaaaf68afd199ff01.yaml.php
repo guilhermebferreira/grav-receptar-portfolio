@@ -1,12 +1,12 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
-    'filename' => 'themes://receptar/receptar.yaml',
+    'filename' => '/home/guilherme/Documentos/grav-receptar-portfolio/user/plugins/error/error.yaml',
     'modified' => 1510448321,
     'data' => [
         'enabled' => true,
-        'showchildpages' => [
-            'enabled' => false
+        'routes' => [
+            404 => '/error'
         ]
     ]
 ];

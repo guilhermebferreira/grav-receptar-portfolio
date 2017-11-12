@@ -1,12 +1,10 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
-    'filename' => 'themes://receptar/receptar.yaml',
+    'filename' => '/home/guilherme/Documentos/grav-receptar-portfolio/user/plugins/taxonomylist/taxonomylist.yaml',
     'modified' => 1510448321,
     'data' => [
         'enabled' => true,
-        'showchildpages' => [
-            'enabled' => false
-        ]
+        'route' => '/blog'
     ]
 ];
