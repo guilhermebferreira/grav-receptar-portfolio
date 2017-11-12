@@ -4,6 +4,14 @@ date: 17:55 12/09/2017
 taxonomy:
     category: artigo
     tag: [Engine, Lua, Jogos, cross-platform]
+
+description:
+  - option: Linguagem:
+    value: Lua
+  - option: Tipo:
+    value: Game Engine
+  - option: Dificuldade:
+    value: Iniciante/Intermediário
 ---
 
 Defold é uma engine voltada para o desenvolvimento de jogos 2D com foco na performance.

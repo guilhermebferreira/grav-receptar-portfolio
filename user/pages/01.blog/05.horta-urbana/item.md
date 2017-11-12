@@ -2,7 +2,7 @@
 title: Horta Urbana
 date: 13:00 09/13/2017
 taxonomy:
-    category: trabalhos
+    category: portfolio
     tag: [python, chatbot, hackaton]
 ---
 

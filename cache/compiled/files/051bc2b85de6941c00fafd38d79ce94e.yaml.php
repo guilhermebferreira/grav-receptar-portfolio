@@ -1,0 +1,57 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => '/home/guilherme/Documentos/grav-receptar-portfolio/user/plugins/blackhole/blueprints.yaml',
+    'modified' => 1510498689,
+    'data' => [
+        'name' => 'Blackhole',
+        'version' => '0.9.1',
+        'description' => 'Static site generator for Grav',
+        'icon' => 'circle',
+        'author' => [
+            'name' => 'BarryMode'
+        ],
+        'homepage' => 'https://github.com/barrymode/grav-plugin-blackhole',
+        'keywords' => 'grav, plugin, static, site, generator',
+        'bugs' => 'https://github.com/barrymode/grav-plugin-blackhole/issues',
+        'docs' => 'https://github.com/barrymode/grav-plugin-blackhole/blob/master/README.md',
+        'license' => 'MIT',
+        'form' => [
+            'validation' => 'strict',
+            'fields' => [
+                'enabled' => [
+                    'type' => 'toggle',
+                    'label' => 'Plugin status',
+                    'highlight' => 1,
+                    'default' => 0,
+                    'options' => [
+                        1 => 'Enabled',
+                        0 => 'Disabled'
+                    ],
+                    'validate' => [
+                        'type' => 'bool'
+                    ]
+                ],
+                'output_path' => [
+                    'type' => 'text',
+                    'label' => 'Output Path',
+                    'help' => 'Set the directory to which your static site will be written. Relative to Grav root (ex. ../)'
+                ],
+                'force' => [
+                    'type' => 'toggle',
+                    'label' => 'Force',
+                    'help' => 'Overwrite previously generated files.',
+                    'highlight' => 1,
+                    'default' => 0,
+                    'options' => [
+                        1 => 'Enabled',
+                        0 => 'Disabled'
+                    ],
+                    'validate' => [
+                        'type' => 'bool'
+                    ]
+                ]
+            ]
+        ]
+    ]
+];
