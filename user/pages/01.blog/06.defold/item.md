@@ -2,7 +2,7 @@
 title: Defold, desenvolvendo jogos com a engine da King
 date: 17:55 12/09/2017
 taxonomy:
-    category: artigo
+    category: artigos
     tag: [Engine, Lua, Jogos, cross-platform]
 
 description:

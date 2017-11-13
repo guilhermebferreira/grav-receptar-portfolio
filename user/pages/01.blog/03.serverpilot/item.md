@@ -2,7 +2,7 @@
 title: Hospedando sua aplicação PHP com DigitalOcean e Serverpilot
 date: 17:00 04/04/2017
 taxonomy:
-    category: artigo
+    category: artigos
     tag: [PHP, DigitalOcean, Serverpilot, Host]
 ---
 

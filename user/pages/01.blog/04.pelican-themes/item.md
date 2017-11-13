@@ -2,7 +2,7 @@
 title: Utilizando temas no Pelican
 date: 17:20 02/20/2017
 taxonomy:
-    category: artigo
+    category: artigos
     tag: [CMS, Pelican, theme]
 ---
 

@@ -2,7 +2,7 @@
 title: Criando um blog estatico com Pelican
 date: 17:20 01/23/2017
 taxonomy:
-    category: artigo
+    category: artigos
     tag: [CMS, Pelican]
 
 description:

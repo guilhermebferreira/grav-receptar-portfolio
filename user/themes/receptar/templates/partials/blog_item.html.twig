@@ -3,7 +3,9 @@
   <div class="entry-media {% if truncate %}entry-{% if page.header.youtube or page.header.soundcloud or page.header.vimeo %}video{% else %}image{% endif %}{% else %} resp_video{% endif %}">
     <figure class="post-thumbnail">
       {% if page.media.images|first %}
-      {{ page.media.images|first.cropZoom(338,451).html('','', 'attachment-receptar-featured size-receptar-featured wp-post-image') }}
+          <a href="{{ page.url }}">
+            {{ page.media.images|first.cropZoom(338,451).html('','', 'attachment-receptar-featured size-receptar-featured wp-post-image') }}
+          </a>
       {% else %}
       <img class="attachment-receptar-featured size-receptar-featured wp-post-image" src="{{ theme_url }}/images/{{ site.global_featured_image }}">
       {% endif %}
@@ -178,9 +180,6 @@
                 <li class="share-google-plus-1">
                   <a rel="nofollow" data-shared="sharing-google-368" class="share-google-plus-1 sd-button share-icon" href="https://plus.google.com/share?url={{ page.url(true) }}" target="_blank" title="{{ page.header.title }}"><span>Google</span></a>
                 </li>
-                <li class="share-pinterest">
-                  <a rel="nofollow" data-shared="sharing-pinterest-368" class="share-pinterest sd-button share-icon" href="https://www.pinterest.com/pin/create/button/?url={{ page.url(true) }}" target="_blank" title="{{ page.header.title }}"><span>Pinterest</span></a>
-                </li>
                 <li class="share-end"></li>
               </ul>
             </div>
@@ -204,6 +203,8 @@
       </div>
       <hr/>
       {% endif %}
+
+
 
       {% if not truncate %}
       {% if config.plugins.jscomments.enabled and config.plugins.jscomments.provider %}

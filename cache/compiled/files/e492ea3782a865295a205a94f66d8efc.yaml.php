@@ -2,8 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/guilherme/Documentos/grav-receptar-portfolio/user/config/plugins/jscomments.yaml',
-    'modified' => 1510448321,
+    'modified' => 1510501479,
     'data' => [
+        'enabled' => false,
         'provider' => '',
         'providers' => [
             'disqus' => [

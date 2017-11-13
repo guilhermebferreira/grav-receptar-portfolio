@@ -2,23 +2,23 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/guilherme/Documentos/grav-receptar-portfolio/user/config/site.yaml',
-    'modified' => 1510448321,
+    'modified' => 1510509583,
     'data' => [
-        'title' => 'Receptar',
-        'description' => 'A very delicious blog.',
+        'title' => 'Guilherme DEV Blog',
+        'description' => 'Apenas algumas linhas de código e um pouco do que ando estudando.',
         'author' => [
-            'name' => 'Grav',
-            'email' => 'joe@test.com',
-            'url' => 'http://getgrav.org/',
+            'name' => 'Guilherme Ferreira',
+            'email' => 'guilherme@uft.edu.br',
+            'url' => 'guilhermebferreira.github.',
             'logo' => NULL,
-            'gravatar' => 'contact@getgrav.org',
-            'description' => 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'
+            'gravatar' => 'guilherme@uft.edu.bg',
+            'description' => 'Python/PHP backend developer.'
         ],
         'blog' => [
             'route' => ''
         ],
         'metadata' => [
-            'description' => 'Receptar is a minimal Theme designed for blogger, converted to Grav.'
+            'description' => 'Personal blog, com tématica voltada para programação e desenvolvimento de software.'
         ],
         'taxonomies' => [
             0 => 'category',
@@ -32,53 +32,41 @@ return [
         'global_featured_image' => 'featured.jpg',
         'social' => [
             0 => [
-                'text' => 'facebook',
-                'url' => 'http://www.facebook.com/getgrav'
+                'text' => 'home',
+                'url' => 'http://guilhermebferreira.github.io'
             ],
             1 => [
                 'text' => 'twitter',
-                'url' => 'http://www.twitter.com/getgrav'
+                'url' => 'http://twitter.com/Guilh_rm_'
             ],
             2 => [
-                'text' => 'google-plus',
-                'url' => 'http://www.plus.google.com/getgrav'
-            ],
-            3 => [
                 'text' => 'linkedin',
-                'url' => 'http://www.linkedin.com/getgrav'
-            ],
-            4 => [
-                'text' => 'youtube-play',
-                'url' => 'http://www.youtube.com/getgrav'
-            ],
-            5 => [
-                'text' => 'home',
-                'url' => 'http://www.getgrav.org'
+                'url' => 'https://www.linkedin.com/in/guilherme-ferreira-dev/'
             ]
         ],
         'slider' => [
             0 => [
-                'image' => 'slide3.jpg',
-                'title' => 'A very delicious blog',
-                'url' => '#'
+                'image' => '3.png',
+                'title' => 'Guilherme DEV Blog',
+                'url' => '/pt/blog/'
             ],
             1 => [
-                'image' => 'slide1.jpg',
-                'title' => 'Duis autem',
-                'url' => '#'
+                'image' => '1.png',
+                'title' => 'Minha participação no 2ª Hackaton da Faculdade Catolica',
+                'url' => '/pt/blog/hackaton'
             ],
             2 => [
-                'image' => 'slide2.jpg',
-                'title' => 'Pumpkin recipe',
-                'url' => '#'
+                'image' => '2.png',
+                'title' => 'Crie um blog estático utilizando Pelican',
+                'url' => '/pt/blog/pelican'
             ]
         ],
         'menu' => [
             0 => [
-                'url' => 'error',
-                'text' => 'Error Page'
+                'url' => '/resume/about.html',
+                'text' => 'Sobre mim'
             ]
         ],
-        'copyright' => 'Designed and developed by <a title="WebMan WordPress Themes" href="http://www.webmandesign.eu/"><strong>WebMan Design</strong></a>, Ported By <a href="http://www.getgrav.org" rel="dofollow" target="_blank" title="Grav">Grav Team</a>'
+        'copyright' => 'Construido com  <a href="http://www.getgrav.org" rel="dofollow" target="_blank" title="Grav">Grav</a>, tema original por <a title="WebMan WordPress Themes" href="http://www.webmandesign.eu/"><strong>WebMan Design</strong></a>'
     ]
 ];

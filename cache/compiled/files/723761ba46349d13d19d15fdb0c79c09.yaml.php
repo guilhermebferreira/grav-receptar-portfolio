@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/home/guilherme/Documentos/grav-receptar-portfolio/user/themes/receptar/languages.yaml',
-    'modified' => 1510448321,
+    'modified' => 1510502115,
     'data' => [
         'en' => [
             'SITE' => [
@@ -411,7 +411,7 @@ return [
             ],
             'SUBSCRIBE' => 'Subscrever',
             'TWEET' => 'Twittar',
-            'SHARE' => 'Partilhar',
+            'SHARE' => 'Compartilhar',
             'MONTHS_OF_THE_YEAR' => [
                 0 => 'Janeiro',
                 1 => 'Fevereiro',

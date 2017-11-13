@@ -1,9 +1,6 @@
 ---
 title: Style guide
 date: 14:55 07/11/2014
-taxonomy:
-    category: portfolio
-    tag: [style guide, recipes]
 ---
 
 THE STYLE GUIDE PROVIDES YOU WITH A BLUEPRINT OF THE THEME’S DEFAULT POST AND PAGE HTML STYLES.
