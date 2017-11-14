@@ -159,10 +159,10 @@ pl:
 
 pt:
   SITE:
-    TITLE: O meu blog
-    DESCRIPTION: Blogando sobre coisas
-    COPYRIGHT: © Copyright %s Empresa
-  SUBSCRIBE: Subscrever
+    TITLE: Guilherme DEV Blog
+    DESCRIPTION: Algumas linhas de código e um alguns frameworks que ando estudando
+    COPYRIGHT: © Copyright %s
+  SUBSCRIBE: Inscrever
   TWEET: Twittar
   SHARE: Compartilhar
   MONTHS_OF_THE_YEAR: [Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
