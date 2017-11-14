@@ -24,11 +24,11 @@ form:
       validate:
         type: bool
 
-    destination_folder: ../teste/
+    destination_folder:
       type: text
       label: Destination folder
 
-    destination_domain: 'https://guilhermebferreira.github.io/'
+    destination_domain:
       type: text
       label: Destination domain
 

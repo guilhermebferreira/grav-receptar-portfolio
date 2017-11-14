@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1510509592,
-    'checksum' => 'e97d92cc9cbc6ab1d648ecc7614b5f8e',
+    'timestamp' => 1510624023,
+    'checksum' => 'b998ab22ba4753deb4740e9f37f1d8b3',
     'files' => [
         'user/config' => [
             'plugins/archives' => [
@@ -68,6 +68,10 @@ return [
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/archives.yaml',
                 'modified' => 1510448321
+            ],
+            'plugins/generator' => [
+                'file' => 'user/plugins/generator/generator.yaml',
+                'modified' => 1504194669
             ],
             'plugins/blackhole' => [
                 'file' => 'user/plugins/blackhole/blackhole.yaml',
@@ -139,6 +143,10 @@ return [
                     'month' => 'archives_month',
                     'year' => 'archives_year'
                 ]
+            ],
+            'generator' => [
+                'enabled' => true,
+                'route' => '/admin/generator'
             ],
             'blackhole' => [
                 'enabled' => true

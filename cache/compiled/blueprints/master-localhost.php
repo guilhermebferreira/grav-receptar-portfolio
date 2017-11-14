@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1510498744,
-    'checksum' => '5463638b5090068a9c7f47d5629d5d27',
+    'timestamp' => 1510624023,
+    'checksum' => '0c0104348ddcae987eaa958a51c77163',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -30,6 +30,10 @@ return [
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/blueprints.yaml',
                 'modified' => 1510448321
+            ],
+            'plugins/generator' => [
+                'file' => 'user/plugins/generator/blueprints.yaml',
+                'modified' => 1510624017
             ],
             'plugins/blackhole' => [
                 'file' => 'user/plugins/blackhole/blueprints.yaml',
@@ -1978,6 +1982,63 @@ return [
                 'name' => 'plugins.archives.filter_combinator',
                 'validation' => 'strict'
             ],
+            'plugins.generator' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.generator.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.generator.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.generator.destination_folder' => [
+                'type' => 'text',
+                'label' => 'Destination folder',
+                'name' => 'plugins.generator.destination_folder',
+                'validation' => 'strict'
+            ],
+            'plugins.generator.destination_domain' => [
+                'type' => 'text',
+                'label' => 'Destination domain',
+                'name' => 'plugins.generator.destination_domain',
+                'validation' => 'strict'
+            ],
+            'plugins.generator.exclude' => [
+                'type' => 'textarea',
+                'label' => 'Folder names to exclude',
+                'name' => 'plugins.generator.exclude',
+                'validation' => 'strict'
+            ],
+            'plugins.generator.include' => [
+                'type' => 'textarea',
+                'label' => 'Folder names to include',
+                'name' => 'plugins.generator.include',
+                'validation' => 'strict'
+            ],
+            'plugins.generator.cache_manifest' => [
+                'type' => 'toggle',
+                'default' => 'off',
+                'label' => 'Generate a cache manifest file',
+                'options' => [
+                    'on' => 'On',
+                    'off' => 'Off'
+                ],
+                'name' => 'plugins.generator.cache_manifest',
+                'validation' => 'strict'
+            ],
             'plugins.blackhole' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -3180,6 +3241,14 @@ return [
                         'category' => 'plugins.archives.filters.category'
                     ],
                     'filter_combinator' => 'plugins.archives.filter_combinator'
+                ],
+                'generator' => [
+                    'enabled' => 'plugins.generator.enabled',
+                    'destination_folder' => 'plugins.generator.destination_folder',
+                    'destination_domain' => 'plugins.generator.destination_domain',
+                    'exclude' => 'plugins.generator.exclude',
+                    'include' => 'plugins.generator.include',
+                    'cache_manifest' => 'plugins.generator.cache_manifest'
                 ],
                 'blackhole' => [
                     'enabled' => 'plugins.blackhole.enabled',
